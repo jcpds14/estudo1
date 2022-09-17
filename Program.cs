@@ -182,3 +182,8 @@ else
 //1. int[] array = new int[4]; Declara o tamanho fixo que o array terá
 //2. int[] array = new int[] {42, 75, 74, 61}; Delclara o array detalhando diretamente os seus valores, não sendo necessário dizer o tamanho dele, pois já está explicito.
 //3. string[] nomes = {"Jan", "Fev"}; Array do tipo string
+
+//Índice é a posição de um determinado valor de um array
+//ex:
+//int elemento = Array[0] Índice 0, ou seja o índice vai buscar o valor que está na posição 0 do array
+//array[0] = 42; significa que o valor que está na posição 0 do array será alterado para 42
