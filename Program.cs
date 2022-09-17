@@ -194,7 +194,15 @@ arrayInteiros[0] = 72;
 arrayInteiros[1] = 64;
 arrayInteiros[2] = 50;
 
+Console.WriteLine("Percorrendo o Array com FOR");
 for (int contadorArray = 0; contadorArray < arrayInteiros.Length; contadorArray++)
 {
     Console.WriteLine($"Posição número {contadorArray} - {arrayInteiros[contadorArray]}");
 }
+
+Console.WriteLine("Percorrendo o Array com FOREACH (para cada)");
+foreach(int valorForeach in arrayInteiros)
+{
+    Console.WriteLine(valorForeach);
+}
+//foreach serve para listas e array e não possui contardor, porém é mais simples de ser implementado pois possui menos código.
