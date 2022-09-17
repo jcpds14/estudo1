@@ -199,6 +199,9 @@ for (int contadorArray = 0; contadorArray < arrayInteiros.Length; contadorArray+
 {
     Console.WriteLine($"Posição número {contadorArray} - {arrayInteiros[contadorArray]}");
 }
+//redimensionando array
+//um array nasce e morre com uma capacidade fixa, porém podemos utilizar o Array.Resize para criar uma cópia do Array e redimencionar o valor. No entanto é apenas uma cópia, o Array original permanece com o mesmo valor pois não pode ser diretamente alterado.
+Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2); //Estou gerando uma cópia do array e duplicando o seu tamanho
 
 Console.WriteLine("Percorrendo o Array com FOREACH (para cada)");
 foreach(int valorForeach in arrayInteiros)
