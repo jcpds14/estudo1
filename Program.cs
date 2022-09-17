@@ -187,3 +187,14 @@ else
 //ex:
 //int elemento = Array[0] Índice 0, ou seja o índice vai buscar o valor que está na posição 0 do array
 //array[0] = 42; significa que o valor que está na posição 0 do array será alterado para 42
+
+int[] arrayInteiros = new int[3];
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+
+for (int contadorArray = 0; contadorArray < arrayInteiros.Length; contadorArray++)
+{
+    Console.WriteLine($"Posição número {contadorArray} - {arrayInteiros[contadorArray]}");
+}
