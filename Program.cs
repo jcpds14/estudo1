@@ -214,3 +214,39 @@ foreach(int valorForeach in arrayInteiros)
 //Array.Copy, faz o mesmo que o Resize porém ele cria uma nova variável com os valores copiados do Array anterior.
 // int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
 // Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+//LISTA
+//Lista é  uma extensão do Array, sempre que possível prefira usar lista, porém saiba que internamente ela trabalha com um Array
+//Com a lista não é necessário se preocupar com a capacidad, apesar de trabalhar internamente com Array não precisamos nos preocupar com ele
+
+List<string> listaString = new List<string>();//Não precisa determinar uma capacidade máxima
+
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+listaString.Add("RJ");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} -  Capacidade: {listaString.Capacity}");
+
+foreach(string estado in listaString)
+{
+    Console.WriteLine($"Estado: {estado}");
+}
+
+listaString.Add("SC");
+
+foreach(string estado in listaString)
+{
+    Console.WriteLine($"Estado: {estado}");
+}
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} -  Capacidade: {listaString.Capacity}");
+
+listaString.Remove("MG");
+
+foreach(string estado in listaString)
+{
+    Console.WriteLine($"Estado: {estado}");
+}
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} -  Capacidade: {listaString.Capacity}");
