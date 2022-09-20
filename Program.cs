@@ -208,4 +208,9 @@ foreach(int valorForeach in arrayInteiros)
 {
     Console.WriteLine(valorForeach);
 }
-//foreach serve para listas e array e não possui contardor, porém é mais simples de ser implementado pois possui menos código.
+//foreach serve para listas e array e não possui contardor, porém é mais simples de ser implementado pois possui menos código. Caso precise de um contador, use for ao invés do foreach.
+
+//Copiando Array
+//Array.Copy, faz o mesmo que o Resize porém ele cria uma nova variável com os valores copiados do Array anterior.
+// int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
+// Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
